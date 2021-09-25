@@ -1,5 +1,4 @@
 .topnav {
-<<<<<<< HEAD
   overflow: hidden;
   background-color: goldenrod;
   margin-bottom: 10px;
@@ -62,51 +61,3 @@ footer {
 footer a {
   color: white;
 }
-=======
-    overflow: hidden;
-    background-color: goldenrod;
-    margin-bottom: 10px;
-  }
-  
-  .topnav a {
-    float: left;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 16px;
-    font-size: 18px;
-  }
-  
-  .merchant {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 18%;
-  }
-  
-  .merchant img {
-    width: 150px;
-  }
-
-  footer {
-    background-color: rgb(255, 145, 0);
-    color: white;
-    display: flex;
-    text-align: left;
-    font-size: 13px;
-    padding: 0 1%;
-  }
-  
-  .faq {
-    text-decoration: none;
-  }
-  
-  .msg {
-    line-height: 50%;
-  }
-  
-  .copyright_footer {
-    background-color: rgb(230, 216, 99);
-    text-align: center;
-    font-size: 12px;
-  }
->>>>>>> bdb30a0ca8bc4f1ed3cac959eeee666636fa9038

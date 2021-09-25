@@ -1,0 +1,63 @@
+.topnav {
+  overflow: hidden;
+  background-color: goldenrod;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-size: 18px;
+}
+
+header img {
+  height: 500px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.merchant1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 18%;
+}
+
+.merchant1 img {
+  width: 150px;
+}
+
+.merchant2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 18%;
+}
+
+.merchant2 img {
+  width: 150px;
+}
+
+.merchant3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 18%;
+}
+
+.merchant3 img {
+  width: 150px;
+}
+
+footer {
+  color: white;
+}
+
+footer a {
+  color: white;
+}

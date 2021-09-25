@@ -18,10 +18,17 @@ a {
 }
 
 header img {
-  height: 500px;
+  height: 40%;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+
 }
 
 .merchant1 {

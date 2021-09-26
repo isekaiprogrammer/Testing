@@ -1,20 +1,9 @@
-.topnav {
-  overflow: hidden;
-  background-color: goldenrod;
-  margin-bottom: 10px;
-}
-
 a {
   text-decoration: none !important;
 }
 
-.topnav a {
-  float: left;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  padding: 14px 16px;
-  font-size: 18px;
+.nav-item:hover{
+  background-color: #1d1d1d;
 }
 
 header img {
@@ -28,7 +17,6 @@ header img {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 2%;
-
 }
 
 .merchant1 {
@@ -67,4 +55,24 @@ footer {
 
 footer a {
   color: white;
+}
+
+.Premium {
+  padding: 3%;
+  text-align: center;
+}
+
+.validation {
+  outline: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+.Redeem{
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }

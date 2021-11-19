@@ -15,7 +15,7 @@ app.use(session({
     cookie: {}
 }))
 
-mongoose.connect(('mongodb+srv://oggyno:renaldy21@cluster0.ync3b.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect(('mongodb+srv://oggyno:renaldy21@cluster0.ync3b.mongodb.net/casi?retryWrites=true&w=majority')
 , (err, res) => {
     if (err){
         console.error(err);

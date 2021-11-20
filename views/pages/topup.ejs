@@ -28,12 +28,16 @@
       <h2>Selamat datang di area Top up</h2>
       <p>Top Up Dengan Casi sangat aman dan nyaman</p>
 
-      <div style="text-align: center;">
-          <h3>Total Saldo :</h3>
-          <label id="Saldo"></label>
+      <div style="text-align: center">
+        <h3>Saldo :</h3>
+        <label id="saldo"></label>
       </div>
-      <br>
       <form class="topup" action="">
+        <div style="padding-right: 7%">
+          <label for="saldo">Masukkan jumlah saldo : </label>
+        </div>
+        <input id="inputsaldo" type="text" required />
+        <br /><br />
         <div style="padding-right: 32%">
           <label for="Bank">Pilihan Bank:</label>
           <br />
@@ -61,14 +65,7 @@
         </div>
         <input type="text" name="" id="" maxlength="15" />
         <br /><br />
-
-        <div id="input" style="padding-right: 1%">
-        <label for="Saldo">Masukkan jumlah saldo : </label>
-        <input type="text" id="inputSaldo" required>
-        <br /><br />
-        <button id="btnTopup">Ok</button>
-        </div>
-
+        <button id="send">Send</button>
       </form>
       <br />
       <br />

@@ -1,10 +1,10 @@
-const inputSaldo = document.getElementById("inputSaldo");
-const Saldo = document.getElementById("Saldo");
-let totalBalance = 0;
+const inputsaldo = document.getElementById("inputsaldo");
+const saldo = document.getElementById("saldo");
+let totalbalance = 0;
 const tp = [];
-const btnTopup = document.getElementById("btnTopup");
+const send = document.getElementById("send");
 
-const formatter= new Intl.NumberFormat('id-ID', {
+const formatter = new Intl.NumberFormat('id-ID', {
     style: 'currency',
     currency: 'IDR',
     minimumFractionDigits: 2,
@@ -14,26 +14,26 @@ const formatter= new Intl.NumberFormat('id-ID', {
     */
   });
 
-btnTopup.addEventListener('click', () => {
+send.addEventListener('click', () => {
 
     //check input from user 
-    if (isNaN(inputSaldo.value)){
+    if (isNaN(inputsaldo.value)){
         alert("Please enter a number");
-        return inputSaldo.value = '';
+        return inputsaldo.value = '';
     } else {
-        if (inputSaldo.value < 1000 || inputSaldo.value > 10000000){
-            alert("You can only top-up beetween Rp.1000 and Rp 10000000")
-            return inputSaldo.value = '';
+        if (inputsaldo.value < 1000 || inputsaldo.value > 10000000){
+            alert("You can only top-up beetween Rp.1000 and Rp 1000000")
+            return inputsaldo.value = '';
         } else {
-            tp.push(Number(inputSaldo.value));
-            totalBalance += (Number(inputSaldo.value));
+            tp.push(Number(inputsaldo.value));
+            totalbalance += (Number(inputsaldo.value));
 
-        let totalBalanceFormatted = formatter.format(totalBalance);
-        document.getElementById("Saldo").innerHTML = totalBalanceFormatted;
+        let totalBalanceFormatted = formatter.format(totalbalance);
 
-        console.log("Rp." + inputSaldo.value);
-        return inputSaldo.value = '';
+        document.getElementById("saldo").innerHTML = totalBalanceFormatted;
+
+        console.log("Rp." + inputsaldo.value);
+        return inputsaldo.value = '';
     }
 }
 });
-

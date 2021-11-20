@@ -37,7 +37,7 @@ router.post('/register', async (req, res) => {
     const nohp = req.body.nohp;
     const email = req.body.email;
     const password = req.body.password;
-    const password_ = req.body.password;
+    const password_ = req.body.password_;
 
     accounts =  await User.find();
     //cek apakah email terdaftar

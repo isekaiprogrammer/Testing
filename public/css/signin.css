@@ -285,3 +285,8 @@ body {
   footer a {
     color: white;
   }
+
+  form i {
+    margin-left: -30px;
+    cursor: pointer;
+}

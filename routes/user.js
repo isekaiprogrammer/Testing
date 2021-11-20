@@ -64,7 +64,7 @@ router.post('/register', async (req, res) => {
             }
         })
         req.session.isLoggedIn = true;
-        res.redirect('/');
+        return res.redirect('/');
     }
 })
 

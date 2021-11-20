@@ -1,8 +1,10 @@
 const inputSaldo = document.getElementById("inputSaldo");
 const Saldo = document.getElementById("Saldo");
-let totalBalance = 0;
-const tp = [];
-const btnTopup = document.getElementById("btnTopup");
+const norek = document.getElementById("norek");
+let totalBalance = 100000;
+const trfBank = [];
+const btnTrf = document.getElementById("btnTrf");
+
 
 const formatter= new Intl.NumberFormat('id-ID', {
     style: 'currency',
@@ -11,19 +13,19 @@ const formatter= new Intl.NumberFormat('id-ID', {
 
   });
 
-btnTopup.addEventListener('click', () => {
+  btnTrf.addEventListener('click', () => {
 
     //check input from user 
     if (isNaN(inputSaldo.value)){
         alert("Please enter a number");
         return inputSaldo.value = '';
     } else {
-        if (inputSaldo.value < 1000 || inputSaldo.value > 10000000){
-            alert("You can only top-up beetween Rp.1000 and Rp 10000000")
+        if (totalBalance < inputSaldo.value){
+            alert("Saldo anda tidak mencukupi")
             return inputSaldo.value = '';
         } else {
-            tp.push(Number(inputSaldo.value));
-            totalBalance += (Number(inputSaldo.value));
+            trfBank.push(Number(inputSaldo.value));
+            totalBalance -= (Number(inputSaldo.value));
 
         let totalBalanceFormatted = formatter.format(totalBalance);
         document.getElementById("Saldo").innerHTML = totalBalanceFormatted;
@@ -33,4 +35,3 @@ btnTopup.addEventListener('click', () => {
     }
 }
 });
-

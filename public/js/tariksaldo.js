@@ -1,6 +1,6 @@
 const tariksaldo = document.getElementById("tariksaldo");
 const saldo = document.getElementById("saldo");
-let totalbalance = 50000;
+let totalbalance = 100000;
 const ts = [];
 const btn_w = document.getElementById("btn_w");
 

@@ -29,7 +29,8 @@
       <label id="Saldo"></label>
     </div>
     <br>
-    
+
+  <form class="topup" action="">
     <div class="trfbank">
       <div style="padding-bottom: 3%">
         <h3>Transfer Antar Bank</h3>
@@ -57,7 +58,7 @@
           <label for="Saldo">Jumlah saldo : </label>
         </div>
         <div>
-          <input type="text" name="trf_bank" id="inputSaldo" />
+          <input type="text" name="trf_bank" id="inputSaldo" required/>
         </div>
       </div>
       <br />
@@ -66,6 +67,7 @@
         <button id="btnTrf" class="btn btn-primary" >Send</button>
       </div>
     </div>
+  </form>
     <%- include('../layouts/footer.ejs'); %>
     <script src="/js/trf_bank.js"></script>
   </body>

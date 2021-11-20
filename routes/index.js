@@ -22,10 +22,6 @@ router.get(('/faq'), (req,res) => {
     res.render('pages/faq')
 })
 
-router.get('/', (req,res) => {
-    res.render('pages/index')
-})
-
 router.get(('/topup'), (req,res) => {
     res.render('pages/topup')
 })

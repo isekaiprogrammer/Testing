@@ -34,11 +34,6 @@
       </div>
       <br>
       <form class="topup" action="">
-        <div style="padding-right: 7%">
-          <label for="Saldo">Masukkan jumlah saldo : </label>
-        </div>
-        <input id="inputSaldo" type="text" required />
-        <br /><br />
         <div style="padding-right: 32%">
           <label for="Bank">Pilihan Bank:</label>
           <br />
@@ -66,7 +61,12 @@
         </div>
         <input type="text" name="" id="norek" maxlength="15" />
         <br /><br />
-        <button id="btnTopup">Send</button>
+        <div style="padding-right: 7%">
+          <label for="Saldo">Masukkan jumlah saldo : </label>
+        </div>
+        <input id="inputSaldo" type="text" required />
+        <br /><br />
+        <button class="btn btn-primary" id="btnTopup">Send</button>
       </form>
       <br />
       <br />

@@ -28,9 +28,13 @@
       <h3>Saldo :</h3>
       <label id="saldo" for=""></label>
     </div>
+    <br>
+  <form class="topup" action="">
     <div class="container">
       <div class="select">
-        <br />
+        <div style="padding-bottom: 5%;">
+          <h3>Tarik Saldo</h3>
+        </div>
         <p>Pilih Bank :</p>
         <select name="Bank">
           <option value="BCA">BCA</option>
@@ -47,12 +51,13 @@
       </div>
       <br />
       <p>Jumlah Penarikan Saldo :</p>
-      <input id="tariksaldo" type="text" placeholder="Amount" /><br />
+      <input id="tariksaldo" type="text" placeholder="Amount" required/><br />
       <p style="font-style: italic"><small>*No Charge Fee </small></p>
       <div class="button">
         <button id="btn_w" type="submit">Withdraw</button>
       </div>
     </div>
+  </form>
     <%- include('../layouts/footer.ejs'); %>
     <script src="/js/tariksaldo.js"></script>
   </body>

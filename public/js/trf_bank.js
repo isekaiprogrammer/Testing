@@ -1,7 +1,7 @@
 const inputSaldo = document.getElementById("inputSaldo");
 const Saldo = document.getElementById("Saldo");
 const norek = document.getElementById("norek");
-let totalBalance = 100000;
+let totalBalance = 75000;
 const trfBank = [];
 const btnTrf = document.getElementById("btnTrf");
 

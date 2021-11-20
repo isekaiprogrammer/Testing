@@ -22,7 +22,7 @@ router.post('/login', async (req, res) => {
     await accounts.forEach((account) => {
         if (email == account.email && password == account.password) {
             req.session.isLoggedIn = true;
-            res.redirect('/');
+            return res.redirect('/');
         }
         else {
             res.render('pages/signin', {error: 'Wrong Password!'})

@@ -15,18 +15,21 @@ router.get('/logout', (req, res) => {
     res.redirect('/');
 })
 
-router.post('/login', async (req, res) => {
+router.post('/login', async (req,res) => {
     const email = req.body.email;
     const password = req.body.password;
+
     accounts =  await User.find();
     await accounts.forEach((account) => {
-        if (email == account.email && password == account.password) {
-            req.session.isLoggedIn = true;
-            return res.redirect('/');
+        if (email == account.email) {
+            if (password == account.password) {
+                req.session.isLoggedIn = true;
+                return res.redirect('/');
         }
         else {
             res.render('pages/signin', {error: 'Wrong Password!'})
-        }
+            }
+                }
     })
     res.render('pages/signin', {error: 'No email found!'})
 })
@@ -67,6 +70,5 @@ router.post('/register', async (req, res) => {
         return res.redirect('/');
     }
 })
-
 
 module.exports = router;
